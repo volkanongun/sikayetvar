@@ -1,6 +1,4 @@
 html, body {
-  margin: 0;
-  padding: 0;
   color: #002a5b;
   font-family: 'Montserrat', sans-serif;
   font-kerning: normal;
@@ -8,7 +6,8 @@ html, body {
 
 .container {
   background: #f1f5f8;
-  width: 375px; }
+  width: 375px;
+  margin: 0 auto; }
   .container .mobile-bar {
     height: 40px;
     position: relative;
@@ -37,7 +36,10 @@ html, body {
     .container .actions li:first-child {
       float: left; }
     .container .actions li:last-child {
-      float: right; }
+      float: right;
+      position: relative; }
+      .container .actions li:last-child .greenlight {
+        position: absolute; }
   .container .profile {
     clear: both;
     text-align: center;
@@ -130,6 +132,9 @@ html, body {
             margin-top: 20px; }
         .container .complaints ul li article {
           width: 270px; }
+          .container .complaints ul li article a {
+            color: #002a5b;
+            text-decoration: none; }
           .container .complaints ul li article .brand {
             font-size: 13px;
             color: #b0bece; }
@@ -147,12 +152,6 @@ html, body {
             color: #b0bece;
             font-size: 12px; }
           .container .complaints ul li article .greenlight {
-            width: 6px;
-            height: 6px;
-            border-radius: 6px;
-            display: inline-block;
-            background-color: #45da6f;
-            position: relative;
             left: -10px;
             margin-right: -5px;
             vertical-align: middle; }
@@ -196,14 +195,27 @@ html, body {
     color: white;
     padding: 1rem;
     height: 3rem;
-    position: relative; }
+    position: relative;
+    font-weight: 500; }
     .container footer img {
       vertical-align: middle;
-      margin-left: 1rem; }
+      margin-left: .4rem; }
+    .container footer a {
+      color: white;
+      text-decoration: none; }
   .container .indicator {
     background-color: black;
-    width: 300px;
+    width: 135px;
     height: 5px;
     border-radius: 5px;
-    top: 10px;
-    position: absolute; }
+    top: 65px;
+    position: absolute;
+    left: 50%;
+    margin-left: -67px; }
+  .container .greenlight {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: #45da6f;
+    position: relative; }
