@@ -1,2 +1,209 @@
-h1 {
-  color: red; }
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #002a5b;
+  font-family: 'Montserrat', sans-serif;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility; }
+
+.container {
+  background: #f1f5f8;
+  width: 375px; }
+  .container .mobile-bar {
+    height: 40px;
+    position: relative;
+    z-index: 2; }
+    .container .mobile-bar img {
+      width: 375px;
+      margin-top: 17px; }
+  .container .bg-seal {
+    background: url(../images/logbg_w.svg) no-repeat;
+    width: 246px;
+    height: 246px;
+    position: relative;
+    top: -166px;
+    left: 62px;
+    z-index: 1;
+    margin-bottom: -230px; }
+  .container .content {
+    padding: 15px; }
+  .container .actions {
+    padding: 0 15px; }
+    .container .actions ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      clear: both; }
+    .container .actions li:first-child {
+      float: left; }
+    .container .actions li:last-child {
+      float: right; }
+  .container .profile {
+    clear: both;
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+    .container .profile h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0; }
+  .container .add-complaint {
+    margin: 44px 0 10px 0; }
+    .container .add-complaint ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center; }
+    .container .add-complaint li {
+      background: #45da6f;
+      display: inline-block;
+      padding: 10px;
+      text-align: center;
+      width: 144px;
+      border-radius: 5px;
+      clear: both;
+      margin-right: 15px;
+      box-shadow: 0px 5px 5px rgba(69, 218, 111, 0.22); }
+      .container .add-complaint li:first-child img {
+        margin: 7px 0 0 0; }
+      .container .add-complaint li:last-child {
+        margin-right: auto; }
+      .container .add-complaint li img {
+        vertical-align: middle;
+        float: left;
+        margin: 3px 0 0 3px; }
+      .container .add-complaint li a {
+        color: white; }
+      .container .add-complaint li span {
+        display: inline-block;
+        float: left;
+        width: 100px;
+        text-align: left;
+        font-weight: 600;
+        margin-left: 10px; }
+  .container .notification {
+    width: 345px;
+    margin: 0 auto 30px auto;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    background: #002a5b;
+    padding: 15px;
+    border-radius: 5px;
+    height: 70px;
+    box-sizing: border-box; }
+    .container .notification p {
+      margin: 0 0 10px 0; }
+    .container .notification a {
+      float: right;
+      color: #45da6f;
+      text-decoration: none; }
+      .container .notification a img {
+        vertical-align: middle;
+        margin-left: 5px; }
+  .container .complaints {
+    box-sizing: border-box;
+    padding: 0 15px 15px 15px; }
+    .container .complaints h2 {
+      margin: 0;
+      color: #b0bece;
+      font-size: 18px;
+      margin-bottom: .5rem; }
+    .container .complaints ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .container .complaints ul li {
+        background: white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0px 5px 5px rgba(100, 108, 178, 0.13);
+        padding: 20px 15px;
+        display: flex;
+        flex-directon: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch; }
+        .container .complaints ul li div {
+          margin-right: 5px; }
+          .container .complaints ul li div img {
+            margin-top: 20px; }
+        .container .complaints ul li article {
+          width: 270px; }
+          .container .complaints ul li article .brand {
+            font-size: 13px;
+            color: #b0bece; }
+          .container .complaints ul li article .title {
+            font-weight: 600;
+            font-size: 17px;
+            margin-bottom: 10px; }
+          .container .complaints ul li article .text {
+            font-size: 14px; }
+          .container .complaints ul li article .action {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px; }
+          .container .complaints ul li article time {
+            color: #b0bece;
+            font-size: 12px; }
+          .container .complaints ul li article .greenlight {
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            display: inline-block;
+            background-color: #45da6f;
+            position: relative;
+            left: -10px;
+            margin-right: -5px;
+            vertical-align: middle; }
+      .container .complaints ul li:last-child {
+        margin-bottom: 0; }
+      .container .complaints ul li.inactive img {
+        opacity: .3; }
+      .container .complaints ul li.inactive .title {
+        opacity: .3; }
+  .container .showmore button {
+    border: none !important;
+    font-weight: 500; }
+    .container .showmore button:hover {
+      text-decoration: underline;
+      color: #002a5b !important;
+      background-color: transparent !important; }
+  .container .showmore,
+  .container .complaint-actions {
+    box-sizing: border-box; }
+    .container .showmore button,
+    .container .complaint-actions button {
+      display: block;
+      width: 345px;
+      margin: 0 15px 10px 15px;
+      padding: 15px;
+      font-size: 16px;
+      border: 1px solid #002a5b;
+      background-color: transparent;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+      color: #002a5b;
+      cursor: pointer; }
+      .container .showmore button:hover,
+      .container .complaint-actions button:hover {
+        color: white;
+        background-color: #002a5b; }
+  .container footer {
+    font-size: 12px;
+    background-color: #45da6f;
+    border-radius: 8px 8px 0 0;
+    color: white;
+    padding: 1rem;
+    height: 3rem;
+    position: relative; }
+    .container footer img {
+      vertical-align: middle;
+      margin-left: 1rem; }
+  .container .indicator {
+    background-color: black;
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    top: 10px;
+    position: absolute; }

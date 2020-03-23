@@ -3,13 +3,95 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         title Şikayet Var
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap", rel="stylesheet")
         script(src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js", defer)
         script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js", defer)
         link(rel="stylesheet" href="css/styles.css")
     body
-        h1 Hello World
-        div
-            div.mobile-bar
-                img(src="images/mobile-bar.png")
+        .container
+            .mobile-bar
+                img(src="images/mobile-bar2.png")
 
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, repellat laboriosam architecto aut obcaecati nam, vel doloribus illum neque incidunt minus, distinctio accusantium tenetur. Accusamus laboriosam nulla et facilis dicta?
+            .bg-seal
+    
+            .actions
+                ul
+                    li
+                        img(src="images/hamburger.png", width="17")
+                    li
+                        img(src="images/bell.png", width="18")
+    
+            .profile
+                img(src="images/avatar.png" width="70")
+                h1 Hakan Ali Gönül
+    
+            .add-complaint
+                ul
+                    li 
+                        a(href="#")
+                            img(src="images/camera_icon.svg")
+                            span
+                                | Hızlı 
+                                br
+                                | Şikayet Ekle
+                    li 
+                        a(href="#")
+                            img(src="images/documents_icon.svg")
+                            span Detaylı Şikayet Ekle
+
+            .notification
+                p Markadan gelen 2 okunmamış mesajınız var.
+                a(href="#") Hemen oku
+                    img(src="images/right-chevron.svg")
+
+            .complaints
+                h2 Son Hareketler
+                ul
+                    li
+                        div
+                            img(src="images/ic_4.svg")
+                        article
+                            .brand Trendyol
+                            .title Lorem ipsum dolor sit amet, consectetur adifs...
+                            .action 
+                                span.greenlight
+                                | Marka şikayetinize cevap yazdı.
+                            .text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit sagittis turpi...
+                            time 5 saat önce
+                    li
+                        div
+                            img(src="images/ic_4.svg")
+                        article
+                            .brand Apple
+                            .title Lorem ipsum dolor sit amet, consectetur adifs...
+                            .action 
+                                span.greenlight
+                                | Şikayetiniz ile ilgili 3 yeni yorum var.
+                            .text
+                            time 5 saat önce
+                    li.inactive
+                        div
+                            img(src="images/ic_4.svg")
+                        article
+                            .brand Garanti Bankası
+                            .title Lorem ipsum dolor sit amet, consectetur adifs...
+                            .action 
+                                span.greenlight
+                                | Şikayetiniz 5 yeni destek aldı.
+                            .text
+                            time 5 saat önce
+
+            .showmore
+                button 
+                    | Daha Çok Göster
+                    img(src="images/down-chevron.svg")
+    
+            .complaint-actions
+                button Tüm Şikayetlerim (12)
+                button Yorum Yazdığım Şikayetler (8)
+                button Desteklediğim Şikayetler (65)
+
+            footer
+                | Yazılan şikayetleri incelemek için sikayetvar.com’a git
+                img(src="images/right-chevron-white.svg")
+                .indicator

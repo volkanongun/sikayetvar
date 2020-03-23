@@ -1,3 +1,313 @@
-h1{
-	color:red;
+$bg : #f1f5f8;
+$blue : #002a5b;
+$green: #45da6f;
+$light-gray: #b0bece;
+
+html,body{
+	margin:0;
+	padding: 0;
+	
+	color: $blue;
+	font-family: 'Montserrat', sans-serif;
+	
+	font-kerning: normal;
+	text-rendering: optimizeLegibility;
+
 }
+
+.container{
+
+	background: $bg;
+	width: 375px;
+
+	.mobile-bar {
+		height:40px;
+		position: relative;
+		z-index: 2;
+
+		img{
+			width: 375px;
+			margin-top: 17px;
+		}
+	}
+
+	.bg-seal{
+		background: url(../images/logbg_w.svg) no-repeat;
+		width:246px;
+		height:246px;
+		position: relative;
+
+		top: -166px;
+		left: 62px;
+		z-index: 1;
+
+		margin-bottom: -230px;
+	}
+
+	.content{
+		padding: 15px;
+	}
+
+	.actions {
+		padding: 0 15px;
+
+		ul{
+			margin:0;
+			padding:0;
+			list-style-type: none;
+			clear:both;
+			
+		}
+
+		li:first-child{
+			float: left
+		}
+
+		li:last-child{
+			float: right;
+		}
+	}
+
+	.profile{
+		clear: both;
+		text-align: center;
+		position: relative;
+		z-index: 2;
+
+		h1{
+			font-size: 20px;
+			font-weight: 600;
+			margin:0;
+		}
+	}
+
+	.add-complaint{
+		margin: 44px 0 10px 0;
+
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding:0;
+			text-align: center;
+		}
+
+		li{
+			background:$green;
+			display:inline-block;
+			padding: 10px;
+			text-align: center;
+			width:144px;
+			border-radius:5px;
+			clear: both;
+			margin-right: 15px;
+			box-shadow: 0px 5px 5px rgba(69, 218, 111, 0.22);
+
+			&:first-child img{
+				margin: 7px 0 0 0;
+			}
+
+			&:last-child{
+				margin-right: auto;
+			}
+			
+			img{
+				vertical-align: middle;
+				float: left;
+				margin: 3px 0 0 3px;
+			}
+
+			a{
+				color: white;
+			}
+
+			span{
+				display:inline-block;
+				float: left;
+				width: 100px;
+				text-align: left;
+				font-weight: 600;
+				margin-left: 10px;
+			}
+		}
+	}
+
+	.notification{
+		width:345px;
+		margin:0 auto 30px auto;
+		font-size:12px;
+		font-weight: 500;
+		color:white;
+		background: $blue;
+		padding: 15px;
+		border-radius:5px;
+		height:70px;
+		box-sizing:border-box;
+	
+		p{
+			margin: 0 0 10px 0;
+		}
+
+		a{
+			float: right;
+			color:$green;
+			text-decoration: none;
+
+			img{
+				vertical-align: middle;
+				margin-left: 5px;
+			}
+		}
+	}
+
+	.complaints{
+		box-sizing:border-box;
+		padding: 0 15px 15px 15px;
+		h2{
+			margin: 0;
+			color:$light-gray;
+			font-size: 18px;
+			margin-bottom: .5rem;
+		}
+
+		ul{
+			list-style-type: none;
+			margin:0;
+			padding: 0;
+
+			li{
+				background: white;
+				border-radius: 5px;
+				margin-bottom: 10px;
+				box-shadow: 0px 5px 5px rgba(100, 108, 178, 0.13);
+				padding:20px 15px;
+				display: flex;
+				flex-directon: row;
+				justify-content:flex-start;
+				align-items: stretch;
+				align-content: stretch;
+
+				div{
+					margin-right: 5px;
+					img{
+						margin-top: 20px;
+					}
+				}
+
+				article{
+					width: 270px;
+			
+					.brand{
+						font-size: 13px;
+						color:$light-gray;
+					}
+					.title{
+						font-weight: 600;
+						font-size: 17px;
+						margin-bottom: 10px;
+					}
+					.text{
+						font-size: 14px;
+					}
+					.action{
+						font-size: 14px;
+						font-weight: 600;
+						margin-bottom: 10px;
+					}
+					time{
+						color:$light-gray;
+						font-size: 12px;
+					}
+
+					.greenlight{
+						width:6px;
+						height:6px;
+						border-radius: 6px;
+						display:inline-block;
+						background-color: $green;
+						position: relative;
+						left:-10px;
+						margin-right: -5px;
+						vertical-align: middle;
+					}
+				}
+			}
+
+			li:last-child{
+				margin-bottom: 0;
+			}
+
+			li.inactive{
+				img{
+					opacity: .3;
+				}
+				.title{
+					opacity: .3;
+				}
+			}
+		}
+	}
+
+	.showmore{
+		button{
+			border:none!important;
+			font-weight: 500;
+
+			&:hover{
+				text-decoration: underline;
+				color:$blue!important;
+				background-color: transparent!important;
+			}
+		}
+	}
+
+	.showmore,
+	.complaint-actions{
+		box-sizing: border-box;
+
+		button{
+			display: block;
+			width: 345px;
+			margin:0 15px 10px 15px;
+			padding: 15px;
+			font-size: 16px;
+			border:1px solid $blue;
+			background-color: transparent;
+			border-radius: 5px;
+			font-family: 'Montserrat', sans-serif;
+			color:$blue;
+			cursor: pointer;
+
+			&:hover{
+				color:white;
+				background-color: $blue;
+			}
+		}
+	}
+	
+	footer{
+		font-size: 12px;
+		background-color: $green;
+		border-radius: 8px 8px 0 0;
+		color:white;
+		padding: 1rem;
+		height:3rem;
+		position: relative;
+
+		img{
+			vertical-align: middle;
+			margin-left: 1rem;
+		}
+	}
+
+	.indicator{
+		background-color: black;
+		width:300px;
+		height: 5px;
+		border-radius: 5px;
+		top: 10px;
+		position: absolute;
+	}
+}
+
+
+
