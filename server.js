@@ -10,7 +10,11 @@ app.use(express.static('public'))
 app.use(morgan('combined', { stream: accessLogStream }))
 
 app.get('/', (req,res)=>{
-	res.render('index', { title: 'Hey', message: 'Hello there!' })
+	res.render('login')
+})
+
+app.get('/logged', (req,res)=>{
+	res.render('logged')
 })
 
 app.listen(3000, ()=>{
