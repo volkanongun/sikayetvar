@@ -24,6 +24,21 @@ html, body {
     left: 62px;
     z-index: 1;
     margin-bottom: -230px; }
+  .container .bg-seal-login {
+    background: url(../images/logbg_w.png) center bottom;
+    background-size: cover;
+    width: 148px;
+    height: 74px;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: -40px; }
+  .container .logo {
+    width: 196px;
+    margin: 0 auto 30px auto; }
+    .container .logo img {
+      width: 100%; }
   .container .content {
     padding: 15px; }
   .container .actions {
@@ -143,7 +158,8 @@ html, body {
             font-size: 17px;
             margin-bottom: 10px; }
           .container .complaints ul li article .text {
-            font-size: 14px; }
+            font-size: 14px;
+            margin-bottom: 10px; }
           .container .complaints ul li article .action {
             font-size: 14px;
             font-weight: 600;
@@ -188,6 +204,8 @@ html, body {
       .container .complaint-actions button:hover {
         color: white;
         background-color: #002a5b; }
+  .container .complaint-actions button:last-child {
+    margin: 0 15px 20px 15px; }
   .container footer {
     font-size: 12px;
     background-color: #45da6f;
@@ -219,3 +237,152 @@ html, body {
     display: inline-block;
     background-color: #45da6f;
     position: relative; }
+  .container .login-with-social, .container .login-with-email, .container .login, .container .register, .container .login-form {
+    text-align: center; }
+  .container .login-with-social p {
+    font-size: 14px;
+    margin-bottom: 30px; }
+  .container .fb-g button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 165px;
+    padding: 0;
+    cursor: pointer; }
+    .container .fb-g button img {
+      vertical-align: middle; }
+    .container .fb-g button:first-child {
+      background: #2f77bf;
+      border: 1px solid #114c86;
+      color: white;
+      margin-right: 15px;
+      height: 44px;
+      line-height: 42px; }
+      .container .fb-g button:first-child span {
+        border-left: 1px solid #114c86;
+        display: inline-block;
+        padding: 0 0 0 12px; }
+      .container .fb-g button:first-child img {
+        width: 12px;
+        margin-right: 15px;
+        margin-left: -3px; }
+    .container .fb-g button:last-child {
+      background: #fff;
+      border: 1px solid #d7d7d7;
+      color: #343434;
+      height: 44px;
+      line-height: 42px; }
+      .container .fb-g button:last-child span {
+        border-left: 1px solid #d7d7d7;
+        display: inline-block;
+        padding: 0 0 0 32px; }
+      .container .fb-g button:last-child img {
+        width: 22px;
+        margin-right: 12px;
+        margin-left: -6px; }
+  .container .login-with-email {
+    margin: 30px 0; }
+    .container .login-with-email p {
+      font-size: 14px;
+      margin: 0; }
+  .container .login-form {
+    padding: 0 15px; }
+    .container .login-form .remember {
+      float: left;
+      vertical-align: middle; }
+    .container .login-form .remember label {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 12px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .container .login-form .remember label input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+    .container .login-form .checkmark {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #f1f5f8;
+      border: 2px solid #B0BECE;
+      border-radius: 4px; }
+    .container .login-form .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .container .login-form .remember label input:checked ~ .checkmark:after {
+      display: block; }
+    .container .login-form .remember label .checkmark:after {
+      left: 7px;
+      top: 3px;
+      width: 7px;
+      height: 12px;
+      border: solid #002a5b;
+      border-width: 0 4px 4px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      border-radius: 3px; }
+    .container .login-form .form-control {
+      clear: both;
+      box-sizing: border-box; }
+      .container .login-form .form-control input[type="text"], .container .login-form .form-control input[type="password"] {
+        margin-bottom: 15px; }
+      .container .login-form .form-control input[type="text"], .container .login-form .form-control input[type="password"] {
+        box-sizing: border-box;
+        color: #002a5b;
+        border: 1px solid #d7e2e8;
+        border-radius: 5px;
+        width: 345px;
+        padding: 15px;
+        font-size: 15px; }
+    .container .login-form .forgot-pass {
+      float: right;
+      font-size: 12px;
+      color: #002a5b !important; }
+      .container .login-form .forgot-pass a {
+        color: #002a5b;
+        text-decoration: underline; }
+        .container .login-form .forgot-pass a:hover {
+          text-decoration: none; }
+    .container .login-form .reveal-pass {
+      position: relative; }
+      .container .login-form .reveal-pass img {
+        position: absolute;
+        top: -48px;
+        right: 20px;
+        width: 26px; }
+  .container .login {
+    margin-top: 110px; }
+    .container .login button {
+      display: block;
+      width: 345px;
+      margin: 0 0 10px 0;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      background-color: #45da6f;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer; }
+  .container hr {
+    border-top: 1px dashed red; }
+  .container .register {
+    margin: 15px 0 30px 0;
+    font-size: 14px; }
+    .container .register a {
+      color: #002a5b;
+      text-decoration: none; }

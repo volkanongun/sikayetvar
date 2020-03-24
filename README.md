@@ -5,3 +5,7 @@ npm run start
 ## how to compile scss
 
 npm run watch-css
+
+### concurrently
+
+npm run dev

@@ -4,19 +4,62 @@ html(lang="en")
         meta(charset="UTF-8")
         title Şikayet Var
         link(href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap", rel="stylesheet")
-        script(src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js", defer)
-        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js", defer)
+        script(src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
         link(rel="stylesheet" href="css/styles.css")
     body
         .container
             .mobile-bar
                 img(src="images/mobile-bar2.png")
 
-            .bg-seal
-                
+            .bg-seal-login
+            
+            .logo
+                img(src="images/sikayetvar_logo_dark.png")
+
+            .login-with-social
+                p Sosyal Medya Hesaplarınızla giriş yapın
+                .fb-g
+                    button
+                        img(src="images/facebook_icon.png")
+                        span Facebook
+                    button
+                        img(src="images/google_icon.png")
+                        span Google
+            
+            .login-with-email
+                p ya da
+                p 
+                    strong Kayıtlı e-posta adresinizle giriş yapın
+            
+            .login-form
+                form
+                    .form-control
+                        input(type="text", name="email", value="me@volkanongun.com", placeholder="E-posta", class="inputemail")
+                    .form-control
+                        input(type="password", name="password", value="Fallout2", placeholder="Şifre", class="inputpass")
+                        .reveal-pass
+                            img(src="images/eye_op.png")
+                    .form-control
+                        .remember
+                            label Beni Hatırla
+                              input(type="checkbox", checked="checked")
+                              span.checkmark
+                        .forgot-pass 
+                            a(href="#") Şifremi Unuttum
+                    .login
+                        button Giriş Yap
+
+            hr
+
+            .register
+                a(href="#") Üye Değilseniz Hemen 
+                    strong Üye Olun
 
             footer
                 a(href="#")
                     | Yazılan şikayetleri incelemek için sikayetvar.com’a git
                     img(src="images/right-chevron-white.svg")
                 .indicator
+        
+        script(src="js/main.js")
